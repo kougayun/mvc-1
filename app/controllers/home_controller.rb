@@ -1,13 +1,13 @@
 class HomeController < ApplicationController
   def list
-		@comment = Says.all
+		@comment = Say.all
   end
 
   def add
   end
 
   def add_process
-		n = Says.new
+		n = Say.new
 		n.name = params[:user]
 		n.comment_say = params[:comment]
 		n.save
