@@ -1,5 +1,6 @@
 class HomeController < ApplicationController
   def list
+		@comment = Says.all
   end
 
   def add
